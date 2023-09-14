@@ -23,3 +23,16 @@ console.log(list)
 
 
 //convertir numeros random a frases 
+
+var arrayData = new Array();
+var archivoTxt= new XMLHttpRequest();
+var fileRuta =  'frasenew.txt';
+archivoTxt.open("GET",fileRuta,false);
+archivoTxt.send(null);
+var Txt = archivoTxt.responseText;
+for (var i = 0; i < Txt.length; i++){
+    arrayData.push(Txt[i])
+}
+arrayData.forEach(function(data){
+    console.log(data);
+});
