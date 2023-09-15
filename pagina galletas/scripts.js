@@ -1,4 +1,6 @@
 //numeros random
+const btnRandom = document.getElementById("random")
+btnRandom.addEventListener('click', ListRandom)
 
 function GenerateRandom(min, max) {
 
@@ -6,24 +8,19 @@ function GenerateRandom(min, max) {
     max = Math.floor(max);
 
     return Math.floor(Math.random() * (1 + max - min) + min);
-
 }
 
 //enlistar numeros random
-
-
-let list = [3]
-
-for (i = 0; i < 3; i++) {
-    list[i] = (GenerateRandom(1, 10));
-
+function ListRandom(list){
+    list = [3]
+    for (i = 0; i < 3; i++) {
+        list[i] = (GenerateRandom(1, 10));
+    }
+    console.log(list)
 }
 
-console.log(list)
-
-
-//convertir numeros random a frases 
-
+//convertir numeros random a frases(lo comenté porque hacia que me diera error XD)
+/* 
 var arrayData = new Array();
 var archivoTxt= new XMLHttpRequest();
 var fileRuta =  'frasenew.txt';
@@ -36,3 +33,4 @@ for (var i = 0; i < Txt.length; i++){
 arrayData.forEach(function(data){
     console.log(data);
 });
+ */
