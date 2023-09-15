@@ -21,15 +21,15 @@ function ListRandom(list) {
 //conversion a palabras
 
 var arrayTxt1 = [
-    "Sí tienes problemas en casa,", 
-    "Sí necesitas ayuda con tus pensamientos pesados,", 
-    "Sí piensas que esta mal sentirse mal,", 
-    "Sí no quieres hablar con otra persona sobre tus sentimientos,", 
-    "Sí te sientes solo,", 
-    "Sí no quieres ser un 'problema',", 
-    "Sí te sientes confundido,", 
-    "Sí quieres llorar,", 
-    "Sí no tienes una enorme cantidad de amigos,", 
+    "Sí tienes problemas en casa,",
+    "Sí necesitas ayuda con tus pensamientos pesados,",
+    "Sí piensas que esta mal sentirse mal,",
+    "Sí no quieres hablar con otra persona sobre tus sentimientos,",
+    "Sí te sientes solo,",
+    "Sí no quieres ser un 'problema',",
+    "Sí te sientes confundido,",
+    "Sí quieres llorar,",
+    "Sí no tienes una enorme cantidad de amigos,",
     "Sí sientes que otros te juzgan en secreto,"
 ]
 var arrayTxt2 = [
@@ -64,42 +64,13 @@ let returned;
 
 document.getElementById("random").onclick = () => {
     returned = (ListRandom(Lista));
-    console.log(returned);
+
 
     var comp1 = returned[0]
     var comp2 = returned[1]
     var comp3 = returned[2]
 
-    console.log(arrayTxt1[comp1])
-    console.log(arrayTxt2[comp2])
-    console.log(arrayTxt3[comp3])
+    document.getElementById("mydiv").innerHTML = arrayTxt1[comp1] + arrayTxt2[comp2] + arrayTxt3[comp3]
 
 };
 
-
-
-
-
-
-
-
-
-
-
-
-//convertir numeros random a frases
-//(lo comenté porque hacia que me diera error XD)
-/* 
-var arrayData = new Array();
-var archivoTxt= new XMLHttpRequest();
-var fileRuta =  'frasenew.txt';
-archivoTxt.open("GET",fileRuta,false);
-archivoTxt.send(null);
-var Txt = archivoTxt.responseText;
-for (var i = 0; i < Txt.length; i++){
-    arrayData.push(Txt[i])
-}
-arrayData.forEach(function(data){
-    console.log(data);
-});
- */
