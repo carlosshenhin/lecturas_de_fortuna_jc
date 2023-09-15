@@ -1,13 +1,3 @@
-// boton de start
-
-let Lista = [3];
-let returned;
-
-document.getElementById("random").onclick = () => {
-    returned = (ListRandom(Lista));
-    console.log(returned);
-};
-
 //numeros random
 
 function GenerateRandom(min, max) {
@@ -22,7 +12,7 @@ function GenerateRandom(min, max) {
 function ListRandom(list) {
     list = [3]
     for (i = 0; i < 3; i++) {
-        list[i] = (GenerateRandom(1, 10));
+        list[i] = (GenerateRandom(0, 9));
     }
 
     return list;
@@ -67,7 +57,24 @@ var arrayTxt3 = [
     "deberias ser tú, y no sentirte mal por eso.",
 ]
 
+// boton de start
 
+let Lista = [3];
+let returned;
+
+document.getElementById("random").onclick = () => {
+    returned = (ListRandom(Lista));
+    console.log(returned);
+
+    var comp1 = returned[0]
+    var comp2 = returned[1]
+    var comp3 = returned[2]
+
+    console.log(arrayTxt1[comp1])
+    console.log(arrayTxt2[comp2])
+    console.log(arrayTxt3[comp3])
+
+};
 
 
 
