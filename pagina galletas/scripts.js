@@ -28,6 +28,8 @@ function ListRandom(list) {
     return list;
 }
 
+//conversion a palabras
+
 var arrayTxt1 = [
     "Sí tienes problemas en casa,", 
     "Sí necesitas ayuda con tus pensamientos pesados,", 
@@ -64,9 +66,6 @@ var arrayTxt3 = [
     "deberias hablar sobre lo que te pasa, esta bien.",
     "deberias ser tú, y no sentirte mal por eso.",
 ]
-
-console.log(arrayTxt1[7])
-
 
 
 
