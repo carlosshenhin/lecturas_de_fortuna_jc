@@ -1,6 +1,14 @@
+// boton de start
+
+let Lista = [3];
+let returned;
+
+document.getElementById("random").onclick = () => {
+    returned = (ListRandom(Lista));
+    console.log(returned);
+};
+
 //numeros random
-const btnRandom = document.getElementById("random")
-btnRandom.addEventListener('click', ListRandom)
 
 function GenerateRandom(min, max) {
 
@@ -11,17 +19,30 @@ function GenerateRandom(min, max) {
 }
 
 //enlistar numeros random
-function ListRandom(list){
+function ListRandom(list) {
     list = [3]
     for (i = 0; i < 3; i++) {
         list[i] = (GenerateRandom(1, 10));
     }
-    console.log(list)
+
     return list;
 }
 
-let Lista = [3]
-let listNum = ListRandom(Lista)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //convertir numeros random a frases
 //(lo comenté porque hacia que me diera error XD)
