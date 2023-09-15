@@ -17,9 +17,14 @@ function ListRandom(list){
         list[i] = (GenerateRandom(1, 10));
     }
     console.log(list)
+    return list;
 }
 
-//convertir numeros random a frases(lo comenté porque hacia que me diera error XD)
+let Lista = [3]
+let listNum = ListRandom(Lista)
+
+//convertir numeros random a frases
+//(lo comenté porque hacia que me diera error XD)
 /* 
 var arrayData = new Array();
 var archivoTxt= new XMLHttpRequest();
