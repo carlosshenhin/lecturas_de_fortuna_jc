@@ -5,43 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fortune Cookies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
     <!-- encabezado -->
     <header class="contenedor-header" id="title">
-        <h1 class="wellcome">Wellcome to My Fortune Coockie.</h1>
+        <h1 class="wellcome">Bienvenido a Fortune Coockie.</h1>
     </header>
     <!-- fin encabezado -->
 
 
     <!-- espacio galleta -->
-    <div class="contenedor-galletas">
+    <section class="container">
 
-        <div class="cortiana" id="cort1">
 
-            <img src="./imgs/Cortinas1.jpg" alt="" id="cortina1">
 
+        <img src="./imgs/Cortinas1.jpg" alt="" id="cortina1">
+
+        <div class="futuro">
+            <div id="mydiv"></div>
+
+            <input type="submit" value="Generar Galleta." id="random" class="boton">
         </div>
 
-        <div id="mydiv"></div>
+        
 
-        <input type="submit" value="Generar Galleta." id="random" class="boton">
+        <img src="./imgs/Cortinas1.jpg" alt="" id="cortina2">
 
-        <div class="cortina" id="cort2">
 
-            <img src="./imgs/Cortinas2.jpg" alt="" id="cortina2">
-
-        </div>
-
-    </div>
+    </section>
     <!-- fin espacio galleta -->
 
     <!-- footer -->
     <footer id="endtitle">
-        <p class="copy">
-            Creadores: Carlos Cardozoy Jose Vasquez. <br>
+        <p>
+            Creadores: Carlos Cardozoy Jose Vasquez.
+        </p>
+        <p>
             Copyrigth 2023.
         </p>
     </footer>
