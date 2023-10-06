@@ -21,28 +21,28 @@ function ListRandom(list) {
 //conversion a palabras
 
 var arrayTxt1 = [
-    "Sí tienes problemas en casa,",
-    "Sí necesitas ayuda con tus pensamientos pesados,",
-    "Sí piensas que esta mal sentirse mal,",
-    "Sí no quieres hablar con otra persona sobre tus sentimientos,",
-    "Sí te sientes solo,",
-    "Sí no quieres ser un 'problema',",
-    "Sí te sientes confundido,",
-    "Sí quieres llorar,",
-    "Sí no tienes una enorme cantidad de amigos,",
-    "Sí sientes que otros te juzgan en secreto,"
+    "Sí tienes problemas en casa, ",
+    "Sí necesitas ayuda con tus pensamientos pesados, ",
+    "Sí piensas que esta mal sentirse mal, ",
+    "Sí no quieres hablar con otra persona sobre tus sentimientos, ",
+    "Sí te sientes solo, ",
+    "Sí no quieres ser un 'problema', ",
+    "Sí te sientes confundido, ",
+    "Sí quieres llorar, ",
+    "Sí no tienes una enorme cantidad de amigos, ",
+    "Sí sientes que otros te juzgan en secreto, "
 ]
 var arrayTxt2 = [
-    "eso significa que eres una persona normal, no te preocupes por eso,",
-    "eso significa que tal vez no estas en tus mejores dias, no te sientas mal solo por eso,",
-    "eso significa que necesitas un poco de ayuda, eso es normal para cualquiera,",
-    "eso significa que tienes un poco de trabajo personal, tomate tu tiempo,",
-    "eso significa que necesitas respirar y descansar, tomate tu tiempo,",
-    "eso significa que no debes dejar de tener esperanza, no te rindas,",
-    "eso significa que debes pensar en tu futuro, no te agobies,",
-    "eso significa que necesitas liberar ese peso, no te sobrecargues,",
-    "eso significa que debes buscar un poco de ayuda, esta bien no estar bien,",
-    "eso significa que pensar quiza por un momento antes de actuar, piensa las cosas bien,"
+    "eso significa que eres una persona normal, no te preocupes por eso, ",
+    "eso significa que tal vez no estas en tus mejores dias, no te sientas mal solo por eso, ",
+    "eso significa que necesitas un poco de ayuda, eso es normal para cualquiera, ",
+    "eso significa que tienes un poco de trabajo personal, tomate tu tiempo, ",
+    "eso significa que necesitas respirar y descansar, tomate tu tiempo, ",
+    "eso significa que no debes dejar de tener esperanza, no te rindas, ",
+    "eso significa que debes pensar en tu futuro, no te agobies, ",
+    "eso significa que necesitas liberar ese peso, no te sobrecargues, ",
+    "eso significa que debes buscar un poco de ayuda, esta bien no estar bien, ",
+    "eso significa que pensar quiza por un momento antes de actuar, piensa las cosas bien, "
 ]
 var arrayTxt3 = [
     "deberias intentar hacer algo al respecto.",
