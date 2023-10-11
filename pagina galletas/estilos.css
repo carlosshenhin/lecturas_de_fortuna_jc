@@ -34,45 +34,58 @@ header h1 {
     background-position: center center;
     background-size: cover;
     color: #fff;
-
     display: flex;
     justify-content: center;
     align-items: center;
     height: 450px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .container img {
     width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: +1;
+    transition: all 400ms ease-out;
+    visibility: hidden;
+    position: absolute;
+}
+
+.container img.active {
     height: 100%;
-    /* z-index:+1; */
+    visibility: visible;
+    transition: all 400ms ease-out;
 }
 
 .futuro {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
-    position:absolute;
+    position: absolute;
     align-items: center;
     width: 600px;
 }
 
-#mydiv{
+#mydiv {
     text-align: center;
 }
 
 .make-futuro {
     padding-top: 10rem;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
-    position:absolute;
+    position: absolute;
     align-items: center;
 }
 
 
 .boton {
-    width: 100px;
-    height: 50px;
+    width: 110px;
+    height: 60px;
     background-color: #522100;
     border-radius: 10px;
     border-color: #241400;
@@ -83,6 +96,15 @@ header h1 {
     align-items: center;
     justify-content: center;
     transition: .3s;
+    box-shadow: 10px 5px 3px rgba(30, 8, 2, 0.8);
+    cursor: pointer;
+}
+
+.boton:hover{
+    transition: all 400ms;
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
 }
 
 

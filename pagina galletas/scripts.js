@@ -1,5 +1,4 @@
 //numeros random
-
 function GenerateRandom(min, max) {
 
     min = Math.ceil(min);
@@ -19,7 +18,6 @@ function ListRandom(list) {
 }
 
 //conversion a palabras
-
 var arrayTxt1 = [
     "Sí tienes problemas en casa, ",
     "Sí necesitas ayuda con tus pensamientos pesados, ",
@@ -57,20 +55,31 @@ var arrayTxt3 = [
     "deberias ser tú, y no sentirte mal por eso.",
 ]
 
-// boton de start
+// cortinas
+function prendercortina() {
+    var cortina = document.getElementById("cortina");
+    cortina.classList.add("active")
+    setTimeout(() => {
+        cortina.classList.remove("active")
+    }, 2000);
+}
 
+// boton de start
 let Lista = [3];
 let returned;
 
 document.getElementById("random").onclick = () => {
     returned = (ListRandom(Lista));
 
-
     var comp1 = returned[0]
     var comp2 = returned[1]
     var comp3 = returned[2]
 
-    document.getElementById("mydiv").innerHTML = arrayTxt1[comp1] + arrayTxt2[comp2] + arrayTxt3[comp3]
+    prendercortina();
+
+    setTimeout(() => {
+        document.getElementById("mydiv").innerHTML = arrayTxt1[comp1] + arrayTxt2[comp2] + arrayTxt3[comp3]
+    }, 2000);
 
 };
 
