@@ -61,6 +61,8 @@ function prendercortina() {
     cortina.classList.add("active")
     setTimeout(() => {
         cortina.classList.remove("active")
+        var elemento = document.getElementById("mydiv");
+        elemento.style.display = "block";
     }, 2000);
 }
 
@@ -71,15 +73,27 @@ let returned;
 document.getElementById("random").onclick = () => {
     returned = (ListRandom(Lista));
 
+
+
+
     var comp1 = returned[0]
     var comp2 = returned[1]
     var comp3 = returned[2]
 
     prendercortina();
 
+    var elemento = document.getElementById("mydiv");
+    elemento.style.display = "none";
+
     setTimeout(() => {
+
         document.getElementById("mydiv").innerHTML = arrayTxt1[comp1] + arrayTxt2[comp2] + arrayTxt3[comp3]
+
     }, 2000);
+
+
+
+    document.getElementById("mydiv").innerHTML = " "
 
 };
 
